@@ -66,6 +66,7 @@
 (printf "Complete in %s millis\n"
         (- (System/currentTimeMillis) start))
 
+;; this shows all the entities by their IRIs.
 (println "Listing all entities in signature")
 (doseq [e (.getSignature pizzaontology)]
   (println "\t" e))
